@@ -37,3 +37,6 @@ models:
       # Applies to all files under models/example/
       staging:
           materialized: table
+# Define variables here
+vars:
+  salary_range: SPLIT(REGEXP_REPLACE(salary_estimate_range, '[^0-9-]', ''), '-')

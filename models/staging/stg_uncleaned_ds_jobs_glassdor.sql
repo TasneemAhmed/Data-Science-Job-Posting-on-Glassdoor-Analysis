@@ -1,4 +1,7 @@
+
 select 
- *
+    job_title,
+    cast( {{ var("salary_range") }}[ORDINAL(1)] as int64) * 1000  AS min_salary_estimate,
+    cast( {{ var("salary_range") }}[ORDINAL(2)] as int64) * 1000  AS max_salary_estimate,
 from 
   `ds-jobs-analysis.DS_Jops_Glassdor.raw_uncleaned_ds_jobs_glassdor`
