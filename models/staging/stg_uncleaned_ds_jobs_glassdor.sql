@@ -11,5 +11,8 @@ select
     company_founded,
     IF( CONTAINS_SUBSTR(company_type_ownership, '-1'), 'Unknown', company_type_ownership) as company_type_ownership,
     IF( CONTAINS_SUBSTR(company_industry, '-1'), 'Unknown', company_industry) as company_industry,
+    company_sector,
+    IF( CONTAINS_SUBSTR(company_total_revenue, '-1'), 'Unknown', company_total_revenue) as company_total_revenue,
+    IF( CONTAINS_SUBSTR(company_Competitors, '-1'), 'Unknown', company_Competitors) as company_competitors,
 from 
   `ds-jobs-analysis.DS_Jops_Glassdor.raw_uncleaned_ds_jobs_glassdor`
