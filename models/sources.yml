@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: DS_Jops_Glassdor
+    tables:
+      - name: raw_uncleaned_ds_jobs_glassdor
