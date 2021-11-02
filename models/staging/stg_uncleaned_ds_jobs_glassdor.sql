@@ -15,4 +15,4 @@ select
     IF( CONTAINS_SUBSTR(company_total_revenue, '-1'), 'Unknown', company_total_revenue) as company_total_revenue,
     IF( CONTAINS_SUBSTR(company_Competitors, '-1'), 'Unknown', company_Competitors) as company_competitors,
 from 
-    {{ref('stg_distinct_uncleaned_ds_jobs')}}
+    {{ref('stg_distinct_uncleaned_ds_ jobs')}}
