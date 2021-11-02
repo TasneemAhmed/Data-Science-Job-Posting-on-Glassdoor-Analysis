@@ -8,6 +8,8 @@ select
     company_location,
     IF( CONTAINS_SUBSTR(headquarters_location, '-1'), company_location, headquarters_location) as headquarters_location,
     IF( CONTAINS_SUBSTR(company_size, '-1'), 'Unknown', company_size) as company_size,
+    company_founded,
     IF( CONTAINS_SUBSTR(company_type_ownership, '-1'), 'Unknown', company_type_ownership) as company_type_ownership,
+    IF( CONTAINS_SUBSTR(company_industry, '-1'), 'Unknown', company_industry) as company_industry,
 from 
   `ds-jobs-analysis.DS_Jops_Glassdor.raw_uncleaned_ds_jobs_glassdor`
