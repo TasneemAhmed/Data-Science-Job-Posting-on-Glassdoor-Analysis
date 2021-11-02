@@ -6,5 +6,6 @@ select
     IF( job_post_rating<0, 0.0, job_post_rating) as job_post_rating,
     REGEXP_REPLACE(company_name, '[^a-zA-z ]', '') as company_name,
     company_location,
+    IF( CONTAINS_SUBSTR(headquarters_location, '-1'), company_location, headquarters_location) as headquarters_location,
 from 
   `ds-jobs-analysis.DS_Jops_Glassdor.raw_uncleaned_ds_jobs_glassdor`
