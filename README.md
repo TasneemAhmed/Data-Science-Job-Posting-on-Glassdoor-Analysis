@@ -1,15 +1,18 @@
-Welcome to your new dbt project!
+### Data Scientist Job Posts on Glassdoor Analysis
+## 1. Download data from Kaggle and uploaded into my drive
+Data link: https://www.kaggle.com/rashikrahmanpritom/data-science-job-posting-on-glassdoor   
 
-### Using the starter project
+## 2.Ingest uncleaned/raw data into BigQuery(Google Cloud Enterprise DataWarehouse) using Python
+Colab Notebook: https://colab.research.google.com/drive/1Pxq6jollsRmgi7HlvQbNlL35M3LQ8Lew?usp=sharing   
 
-Try running the following commands:
-- dbt run
-- dbt test
+## 3.Transform uncleaned/raw data by SQL in dbt(data build tool) which enables analytics engineers to make transformation in data already loaded in DataWarehouse
+![transformation](https://user-images.githubusercontent.com/49993791/140627101-0db5b0cf-423c-423d-9238-80f4da501b1d.png)
 
+## 4.Load transformed data into BigQuery
+![BigQuery](https://user-images.githubusercontent.com/49993791/140627269-3dbe5a11-15e4-4fc1-9a17-b24bbe90161c.png)
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## 5.Visulize data which is loaded using Data Studio & tableau 
+to answer questions like: What is average of range salary(min & max salary estimate) and 
+what are skills needed to be data scientist and count of them in job posts
+Dashboard link: https://datastudio.google.com/reporting/cec36c9e-7416-4953-9214-b770b83f16fb 
+![final report](https://user-images.githubusercontent.com/49993791/140627225-0d68ff5e-e309-4127-8d65-44b87d21beab.png)
