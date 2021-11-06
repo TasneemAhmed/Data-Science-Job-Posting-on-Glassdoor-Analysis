@@ -17,6 +17,7 @@ select
     IF(CONTAINS_SUBSTR(company_total_revenue, '-1' ),'Unknown', company_total_revenue) as company_total_revenue,
     IF(CONTAINS_SUBSTR(company_Competitors, '-1' ),'Unknown', company_Competitors) as company_competitors,
     
+    IF(CONTAINS_SUBSTR(job_description, 'statistics' ),1, 0) as job_post_has_statistics,
     IF(CONTAINS_SUBSTR(job_description, 'python' ),1, 0) as job_post_has_python,
     IF(CONTAINS_SUBSTR(job_description, 'excel' ),1, 0) as job_post_has_excel,
     IF(CONTAINS_SUBSTR(job_description, 'hadoop' ),1, 0) as job_post_has_hadoop,
