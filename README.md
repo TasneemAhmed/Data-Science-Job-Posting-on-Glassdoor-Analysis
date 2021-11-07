@@ -15,4 +15,5 @@ Colab Notebook: https://colab.research.google.com/drive/1Pxq6jollsRmgi7HlvQbNlL3
 to answer questions like: What is average of range salary(min & max salary estimate) and 
 what are skills needed to be data scientist and count of them in job posts
 Dashboard link: https://datastudio.google.com/reporting/cec36c9e-7416-4953-9214-b770b83f16fb 
+
 ![final report](https://user-images.githubusercontent.com/49993791/140627225-0d68ff5e-e309-4127-8d65-44b87d21beab.png)
